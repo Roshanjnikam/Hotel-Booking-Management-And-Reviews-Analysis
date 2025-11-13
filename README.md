@@ -1,12 +1,55 @@
-### Hotel Booking Management & Reviews Analysis – Project Report
+## Hotel Booking Management & Reviews Analysis – Project Report
 #### By Roshan Nikam
 ### Project Overview
 #### This end-to-end project analysis hotel booking trends, hotel performance, user demographics, traveller types, and review sentiments using:
-•	PostgreSQL database (schema, queries, data loading) <br> •	Python for EDA, clustering, ML classification & sentiment analysis <br> •	Power BI Dashboard
-The goal is to help hotels understand guest behaviour, improve service quality, identify top hotels, and extract insights from user-generated reviews.
+•	PostgreSQL database (schema, queries, data loading) <br> •	Python for EDA, clustering, ML classification & sentiment analysis <br> •	Power BI Dashboard <br>The goal is to help hotels understand guest behaviour, improve service quality, identify top hotels, and extract insights from user-generated reviews.
 
 
+### 1. Database Design (SQL Schema)
+#### Tables Created
+#### 1. hotels <br>
+create table hotels(
+ hotel_id INT PRIMARY KEY,
+ hotel_name VARCHAR(50),
+ city VARCHAR(50),
+ country VARCHAR(50),
+ star_rating INT,
+ lat REAL,
+ lon REAL,
+ cleanliness_base DECIMAL(10,2),
+ comfort_base DECIMAL(10,2),
+ facilities_base DECIMAL(10,2),
+ location_base DECIMAL(10,2),
+ staff_base DECIMAL(10,2),
+ value_for_money_base DECIMAL(10,2)
+); <br>
 
+####2. users <br>
+create table users(
+ user_id INT PRIMARY KEY,
+ user_gender VARCHAR(10),
+ country VARCHAR(50),
+ age_group TEXT,
+ traveller_type VARCHAR(50),
+ join_date DATE
+); <br>
+
+### 3. reviews
+create table reviews(
+ review_id INT PRIMARY KEY,
+ user_id INT REFERENCES users(user_id),
+ hotel_id INT REFERENCES hotels(hotel_id),
+ review_date DATE,
+ score_overall DECIMAL(10,2),
+ score_cleanliness DECIMAL(10,2),
+ score_comfort DECIMAL(10,2),
+ score_facilities DECIMAL(10,3),
+ score_location DECIMAL(10,2),
+ score_staff DECIMAL(10,2),
+ score_value_for_money DECIMAL(10,2),
+ review_text TEXT
+);
+<br>
 
 
 
