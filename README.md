@@ -109,7 +109,7 @@ This project analyzes hotel booking patterns, customer demographics, hotel perfo
 <br>
 **The dashboard provides a complete 360° view of hotel booking activity.**<br>
 <br>
-**1. Key Metrics.<br>** <br>
+**1. Key Metrics.<br>**
 -Total Hotels	25 <br>-Average Rating	5 <br>-Overall Average Score	8.94 <br>-Total Users	50K <br>-Total Reviews	50K <br>-Avg Cleanliness Score	9.05 <br>-Avg Staff Score	8.97 <br>-Avg Comfort Score	9.02 <br> 
 These metrics show that the hotels maintain very high service quality, with overall scores above 8.9. <br>
 <br>
@@ -136,7 +136,7 @@ The map visual displays average hotel ratings across regions:<br>Highly rated ho
 **8. Key Insights.** <br>
 1. Hotels maintain strong cleanliness, comfort, and staff performance With average scores above 8.9, customer satisfaction is consistently high.<br>2. Couple travelers are the largest user segmentHotels can design couple packages and offers.<br>3. Summer months show highest customer engagementMarketing campaigns should target June–August.<br>4. Top hotels consistently receive high engagement Properties like Nile Grandeur and Han River Oasis are customer favorites.<br>5. Global distribution shows variation in ratings Hotel quality varies by region, helping brands understand where to improve.<br>
 <br>
-**9. Conclusion.**  <br>
+****9. Conclusion.****  <br>
 The Hotel Booking Insights dashboard provides a comprehensive view of customer demographics, hotel popularity, review trends, and service quality.
 With this analysis, hotel management can:<br>
 Identify best-performing properties Improve low-performing regions Understand traveler behavior Enhance customer experience<br>Optimize seasonal strategies Overall, the data suggests that hotels deliver excellent service quality, attracting consistent engagement throughout the year.
