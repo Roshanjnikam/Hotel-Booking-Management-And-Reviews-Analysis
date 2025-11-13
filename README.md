@@ -90,16 +90,7 @@ WITH score AS (<br>SELECT h.hotel_name, h.country AS hotel_country,<br> u.countr
 
 ### 4. SQL Analysis Insights:
 ##### Insights overview:
-•	User id’s 710,1489,1042,588,1752 these are youngest users to write reviews.
-•	Most users belong from United state then followed by United Kingdom, Germany.
-•	In traveller type most common users belong to couple followed by family then solo, business.
-•	The golden oasis hotel has 9.92 highest overall score then canal house grand, marina bay zenith
-•	Tokyo city stands first in score cleanliness 
-•	User ID 1758 wrote review more than five times.
-•	Hotel "Tango Boutique” got most frequently reviews.
-•	The Savannah House hotel received most rating by family travel type.
-•	"The Gateway Royale" this hotel got good score from foreigners compared to locals.
-•	City of Amsterdam Hotel Canal House Grand got rant first for overall score.
+•	User id’s 710,1489,1042,588,1752 these are youngest users to write reviews.<br>•	Most users belong from United state then followed by United Kingdom, Germany.<br>•	In traveller type most common users belong to couple followed by family then solo, business.<br>•	The golden oasis hotel has 9.92 highest overall score then canal house grand, marina bay zenith<br>•	Tokyo city stands first in score cleanliness <br>•	User ID 1758 wrote review more than five times.<br>•	Hotel "Tango Boutique” got most frequently reviews.<br>•	The Savannah House hotel received most rating by family travel type.<br>•	"The Gateway Royale" this hotel got good score from foreigners compared to locals.<br>•	City of Amsterdam Hotel Canal House Grand got rant first for overall score.<br>
 ##### Like this there is so many insights.
 
 ### 5. Power BI Dashboard
