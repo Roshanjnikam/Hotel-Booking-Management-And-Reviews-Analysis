@@ -5,49 +5,49 @@
 •	PostgreSQL database (schema, queries, data loading) <br> •	Python for EDA, clustering, ML classification & sentiment analysis <br> •	Power BI Dashboard <br>The goal is to help hotels understand guest behaviour, improve service quality, identify top hotels, and extract insights from user-generated reviews.
 
 
-### 1. Database Design (SQL Schema)
-#### Tables Created
-#### 1. hotels <br>
-create table hotels(
- hotel_id INT PRIMARY KEY,
- hotel_name VARCHAR(50),
- city VARCHAR(50),
- country VARCHAR(50),
- star_rating INT,
- lat REAL,
- lon REAL,
- cleanliness_base DECIMAL(10,2),
- comfort_base DECIMAL(10,2),
- facilities_base DECIMAL(10,2),
- location_base DECIMAL(10,2),
- staff_base DECIMAL(10,2),
- value_for_money_base DECIMAL(10,2)
+### 1. Database Design (SQL Schema).
+#### Tables Created.
+#### 1. hotels.
+create table hotels( <br>
+ hotel_id INT PRIMARY KEY, <br>
+ hotel_name VARCHAR(50), <br>
+ city VARCHAR(50), <br>
+ country VARCHAR(50), <br>
+ star_rating INT, <br>
+ lat REAL, <br>
+ lon REAL, <br>
+ cleanliness_base DECIMAL(10,2), <br>
+ comfort_base DECIMAL(10,2), <br>
+ facilities_base DECIMAL(10,2), <br>
+ location_base DECIMAL(10,2), <br>
+ staff_base DECIMAL(10,2), <br>
+ value_for_money_base DECIMAL(10,2) <br>
 ); <br>
 
-####2. users <br>
-create table users(
- user_id INT PRIMARY KEY,
- user_gender VARCHAR(10),
- country VARCHAR(50),
- age_group TEXT,
- traveller_type VARCHAR(50),
- join_date DATE
+#### 2. users.
+create table users( <br>
+ user_id INT PRIMARY KEY, <br>
+ user_gender VARCHAR(10), <br>
+ country VARCHAR(50), <br>
+ age_group TEXT, <br>
+ traveller_type VARCHAR(50), <br>
+ join_date DATE <br>
 ); <br>
 
-### 3. reviews
-create table reviews(
- review_id INT PRIMARY KEY,
- user_id INT REFERENCES users(user_id),
- hotel_id INT REFERENCES hotels(hotel_id),
- review_date DATE,
- score_overall DECIMAL(10,2),
- score_cleanliness DECIMAL(10,2),
- score_comfort DECIMAL(10,2),
- score_facilities DECIMAL(10,3),
- score_location DECIMAL(10,2),
- score_staff DECIMAL(10,2),
- score_value_for_money DECIMAL(10,2),
- review_text TEXT
+### 3. reviews.
+create table reviews( <br>
+ review_id INT PRIMARY KEY, <br>
+ user_id INT REFERENCES users(user_id), <br>
+ hotel_id INT REFERENCES hotels(hotel_id), <br>
+ review_date DATE, <br>
+ score_overall DECIMAL(10,2), <br>
+ score_cleanliness DECIMAL(10,2), <br>
+ score_comfort DECIMAL(10,2), <br>
+ score_facilities DECIMAL(10,3), <br>
+ score_location DECIMAL(10,2), <br>
+ score_staff DECIMAL(10,2), <br>
+ score_value_for_money DECIMAL(10,2), <br>
+ review_text TEXT <br>
 );
 <br>
 
