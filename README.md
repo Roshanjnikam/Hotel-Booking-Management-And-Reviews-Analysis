@@ -4,7 +4,7 @@
 This end-to-end project analysis hotel booking trends, hotel performance, user demographics, traveller types, and review sentiments using:
 •	PostgreSQL database (schema, queries, data loading) <br> •	Python for EDA, clustering, ML classification & sentiment analysis <br> •	Power BI Dashboard <br>The goal is to help hotels understand guest behaviour, improve service quality, identify top hotels, and extract insights from user-generated reviews.<br>
 ### 1. Database Design (SQL Schema).<br>Tables Created.
-1. hotels.<br>
+##### 1. hotels.<br>
 create table hotels( <br>
  hotel_id INT PRIMARY KEY, <br>
  hotel_name VARCHAR(50), <br>
@@ -20,7 +20,7 @@ create table hotels( <br>
  staff_base DECIMAL(10,2), <br>
  value_for_money_base DECIMAL(10,2) <br>
 ); <br>
-2. users.<br>
+##### 2. users.<br>
 create table users( <br>
  user_id INT PRIMARY KEY, <br>
  user_gender VARCHAR(10), <br>
@@ -29,8 +29,7 @@ create table users( <br>
  traveller_type VARCHAR(50), <br>
  join_date DATE <br>
 ); <br>
-
-### 3. reviews.
+##### 3. reviews.<br>
 create table reviews( <br>
  review_id INT PRIMARY KEY, <br>
  user_id INT REFERENCES users(user_id), <br>
