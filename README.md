@@ -96,14 +96,16 @@ WITH score AS (<br>SELECT h.hotel_name, h.country AS hotel_country,<br> u.countr
 )<br>SELECT hotel_name,<br>ROUND(local_score,2), ROUND(foreign_score,2),<br>ROUND(foreign_score-local_score,2) AS difference<br>FROM pivot<br>WHERE foreign_score > local_score<br>ORDER BY difference DESC;<br>
 
 ### 4. SQL Analysis Insights:
-##### Insights overview:
+**Insights overview:** <br>
 •	User id’s 710,1489,1042,588,1752 these are youngest users to write reviews.<br>•	Most users belong from United state then followed by United Kingdom, Germany.<br>•	In traveller type most common users belong to couple followed by family then solo, business.<br>•	The golden oasis hotel has 9.92 highest overall score then canal house grand, marina bay zenith<br>•	Tokyo city stands first in score cleanliness <br>•	User ID 1758 wrote review more than five times.<br>•	Hotel "Tango Boutique” got most frequently reviews.<br>•	The Savannah House hotel received most rating by family travel type.<br>•	"The Gateway Royale" this hotel got good score from foreigners compared to locals.<br>•	City of Amsterdam Hotel Canal House Grand got rant first for overall score.<br>
 **Like this there is so many insights.**
 <br>
 ### 5. Power BI Dashboard.
-A single dashboard was designed with the following visuals:<br>•	Hotel performance overview. <br>•	Geographical map.<br> •	Traveller type analysis.<br>•	Review trends.<br>•	Value for money comparison.<br>•	Gender comparison.<br>•	Top 10 hotels.<br>•	Users rushed by months.<br>•	Using aged group wise analysis.<br>•	Monthly comparisons. <br>This project analyzes hotel booking patterns, customer demographics, hotel performance, and user review behaviors using an interactive dashboard.The insights help hotel management understand:<br>Who their customers are.<br>Which hotels perform best.<br>Seasonal booking patterns.<br>Traveler behavior.<br>Service quality performance.
-#### The dashboard provides a complete 360° view of hotel booking activity.
-### 1. Key Metrics.<br>Metric	Value<br>-Total Hotels	25 <br>-Average Rating	5 <br>-Overall Average Score	8.94 <br>-Total Users	50K <br>-Total Reviews	50K <br>-Avg Cleanliness Score	9.05 <br>-Avg Staff Score	8.97 <br>-Avg Comfort Score	9.02 <br> 
+A single dashboard was designed with the following visuals:<br>•	Hotel performance overview. <br>•	Geographical map.<br> •	Traveller type analysis.<br>•	Review trends.<br>•	Value for money comparison.<br>•	Gender comparison.<br>•	Top 10 hotels.<br>•	Users rushed by months.<br>•	Using aged group wise analysis.<br>•	Monthly comparisons. <br>This project analyzes hotel booking patterns, customer demographics, hotel performance, and user review behaviors using an interactive dashboard.The insights help hotel management understand:<br>Who their customers are.<br>Which hotels perform best.<br> - Seasonal booking patterns.<br> - Traveler behavior.<br> - Service quality performance.
+<br>
+**The dashboard provides a complete 360° view of hotel booking activity.**<br>
+**1. Key Metrics.<br>** <br>
+-Total Hotels	25 <br>-Average Rating	5 <br>-Overall Average Score	8.94 <br>-Total Users	50K <br>-Total Reviews	50K <br>-Avg Cleanliness Score	9.05 <br>-Avg Staff Score	8.97 <br>-Avg Comfort Score	9.02 <br> 
 These metrics show that the hotels maintain very high service quality, with overall scores above 8.9.
 ### 2. Top 10 Hotels by User Reviews.<br>Based on number of users who reviewed:
 Nile Grandeur – 2104<br>Han River Oasis – 2071<br>The Kiwi Grand – 2060<br>The Orchid Palace – 2055<br>The Savannah House – 2049<br>The Bund Palace – 2040<br>Gaudi's Retreat – 2039<br>The Golden Oasis – 2035<br>Berlin Mitte Elite – 2022<br>Marina Bay Zenith – 2015
