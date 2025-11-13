@@ -133,7 +133,7 @@ The booking rush chart shows:<br>Monthly bookings fluctuate between 3,000 — 5,
 **7. Location-Based Hotel Ratings.** <br>
 The map visual displays average hotel ratings across regions:<br>Highly rated hotels are concentrated in Europe and North America Moderate ratings observed in Asia, Africa, and South America.This reveals geographic trends in hotel service quality and customer expectations.<br>
 <br>
-**8. Key Insights.**
+**8. Key Insights.** <br>
 1.Hotels maintain strong cleanliness, comfort, and staff performance With average scores above 8.9, customer satisfaction is consistently high.<br>
 2. Couple travelers are the largest user segmentHotels can design couple packages and offers.<br>
 3. Summer months show highest customer engagementMarketing campaigns should target June–August.<br>
