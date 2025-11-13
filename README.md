@@ -1,6 +1,7 @@
 ## Hotel Booking Management & Reviews Analysis – Project Report
 #### By Roshan Nikam
-### Project Overview <br>This end-to-end project analysis hotel booking trends, hotel performance, user demographics, traveller types, and review sentiments using:
+### Project Overview <br>
+This end-to-end project analysis hotel booking trends, hotel performance, user demographics, traveller types, and review sentiments using:
 •	PostgreSQL database (schema, queries, data loading) <br> •	Python for EDA, clustering, ML classification & sentiment analysis <br> •	Power BI Dashboard <br>The goal is to help hotels understand guest behaviour, improve service quality, identify top hotels, and extract insights from user-generated reviews.<br>
 ### 1. Database Design (SQL Schema).<br>Tables Created.
 1. hotels.<br>
@@ -19,8 +20,7 @@ create table hotels( <br>
  staff_base DECIMAL(10,2), <br>
  value_for_money_base DECIMAL(10,2) <br>
 ); <br>
-
-#### 2. users.
+2. users.<br>
 create table users( <br>
  user_id INT PRIMARY KEY, <br>
  user_gender VARCHAR(10), <br>
