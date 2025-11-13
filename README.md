@@ -3,7 +3,7 @@
 ### Project Overview <br>
 This end-to-end project analysis hotel booking trends, hotel performance, user demographics, traveller types, and review sentiments using:
 •	PostgreSQL database (schema, queries, data loading) <br> •	Python for EDA, clustering, ML classification & sentiment analysis <br> •	Power BI Dashboard <br>The goal is to help hotels understand guest behaviour, improve service quality, identify top hotels, and extract insights from user-generated reviews.<br>
-### 1. Database Design (SQL Schema).<br>Tables Created.
+### 1. Database Design (SQL Schema).<br>Tables Created.<br>
 **1. hotels.<br>**
 create table hotels( <br>
  hotel_id INT PRIMARY KEY, <br>
@@ -48,34 +48,34 @@ create table reviews( <br>
 COPY hotels FROM 'D:\postgres\Projects\hotel_booking\hotels.csv' DELIMITER ',' CSV HEADER; <br>COPY users FROM 'D:\postgres\Projects\hotel_booking\users.csv' DELIMITER ',' CSV HEADER; <br>COPY reviews FROM 'D:\postgres\Projects\hotel_booking\reviews.csv' DELIMITER ',' CSV HEADER; <br>
 
 ### 3. SQL Queries  overview Used in Analysis.
-**1. List hotels in a specific city.**
-SELECT hotel_name, star_rating FROM hotels WHERE city='London';
-#### 2. Top 5 youngest users who wrote reviews.
-SELECT u.user_id, u.age_group, r.review_text <br>FROM users u <br>LEFT JOIN reviews r ON u.user_id = r.user_id<br>ORDER BY u.age_group ASC <br>LIMIT 5;
-#### 3. All reviews for a given hotel.
-SELECT h.hotel_name, r.review_date, r.review_text<br>FROM hotels h<br>LEFT JOIN reviews r ON h.hotel_id = r.hotel_id<br>ORDER BY r.review_date ASC;
-#### 4. Count users per country.
-SELECT country, COUNT(user_id) <br>FROM users <br>GROUP BY country;
-#### 5. Most common traveler type.
-SELECT traveller_type, COUNT(user_id)<br>FROM users <br>GROUP BY traveller_type<br>ORDER BY COUNT(user_id) DESC;
-#### 6. Top 10 hotels with highest average overall ratings.
-SELECT h.hotel_name, AVG(r.score_overall) AS avg_score<br>FROM hotels <br>JOIN reviews r ON h.hotel_id = r.hotel_id<br>GROUP BY h.hotel_name<br>ORDER BY avg_score DESC <br>LIMIT 10;
-#### 7. City with highest cleanliness score.
-SELECT h.city, AVG(r.score_cleanliness) AS avg_cleanliness<br>FROM hotels h<br>JOIN reviews r ON h.hotel_id=r.hotel_id<br>GROUP BY h.city<br>ORDER BY avg_cleanliness DESC;
-#### 8. Users who wrote more than 5 reviews.
-SELECT u.user_id, COUNT(r.review_text)<br> FROM users u<br>JOIN reviews r ON u.user_id=r.user_id<br>GROUP BY u.user_id<br>HAVING COUNT(r.review_text) > 5;
-#### 9. Compare hotel star rating with actual user experience.
+**1. List hotels in a specific city.** <br>
+SELECT hotel_name, star_rating FROM hotels WHERE city='London';<br>
+**2. Top 5 youngest users who wrote reviews.** <br>
+SELECT u.user_id, u.age_group, r.review_text <br>FROM users u <br>LEFT JOIN reviews r ON u.user_id = r.user_id<br>ORDER BY u.age_group ASC <br>LIMIT 5;<br>
+**3. All reviews for a given hotel.** <br>
+SELECT h.hotel_name, r.review_date, r.review_text<br>FROM hotels h<br>LEFT JOIN reviews r ON h.hotel_id = r.hotel_id<br>ORDER BY r.review_date ASC;<br>
+**4. Count users per country.** <br>
+SELECT country, COUNT(user_id) <br>FROM users <br>GROUP BY country;<br>
+**5. Most common traveler type.** <br>
+SELECT traveller_type, COUNT(user_id)<br>FROM users <br>GROUP BY traveller_type<br>ORDER BY COUNT(user_id) DESC;<br>
+**6. Top 10 hotels with highest average overall ratings.** <br>
+SELECT h.hotel_name, AVG(r.score_overall) AS avg_score<br>FROM hotels <br>JOIN reviews r ON h.hotel_id = r.hotel_id<br>GROUP BY h.hotel_name<br>ORDER BY avg_score DESC <br>LIMIT 10;<br>
+**7. City with highest cleanliness score.** <br>
+SELECT h.city, AVG(r.score_cleanliness) AS avg_cleanliness<br>FROM hotels h<br>JOIN reviews r ON h.hotel_id=r.hotel_id<br>GROUP BY h.city<br>ORDER BY avg_cleanliness DESC;<br>
+**8. Users who wrote more than 5 reviews.** <br>
+SELECT u.user_id, COUNT(r.review_text)<br> FROM users u<br>JOIN reviews r ON u.user_id=r.user_id<br>GROUP BY u.user_id<br>HAVING COUNT(r.review_text) > 5;<br>
+**9. Compare hotel star rating with actual user experience.** <br>
 SELECT h.hotel_id, h.hotel_name, h.star_rating,<br>ROUND(AVG(r.score_overall),2) AS review_score,<br>(h.star_rating - ROUND(AVG(r.score_overall),2)) AS difference<br>FROM hotels h<br>JOIN reviews r ON h.hotel_id=r.hotel_id<br>GROUP BY h.hotel_id, h.hotel_name, h.star_rating<br>ORDER BY difference DESC;<br>
-#### 10. Hotels where guests feel value for money is lower than expected.
+**10. Hotels where guests feel value for money is lower than expected.** <br>
 SELECT h.hotel_id, h.hotel_name, h.value_for_money_base,<br>ROUND(AVG(r.score_value_for_money),2) AS avg_value<br>FROM hotels h<br>JOIN reviews r ON h.hotel_id=r.hotel_id<br>GROUP BY h.hotel_id, h.hotel_name, h.value_for_money_base<br>HAVING ROUND(AVG(score_value_for_money),2) < h.value_for_money_base;<br>
-#### 11. Most frequently reviewed hotel in each country.
+**11. Most frequently reviewed hotel in each country.** <br>
 WITH hotel_review_count AS (<br>SELECT h.hotel_id, h.hotel_name, h.country,<br>COUNT(r.review_id) AS total_review,<br>RANK() OVER(PARTITION BY h.country ORDER BY COUNT(r.review_id) DESC) AS rank_no<br>FROM hotels h<br>JOIN reviews r ON h.hotel_id=r.hotel_id<br>GROUP BY h.hotel_id, h.hotel_name, h.country<br>
 )<br>SELECT hotel_id, hotel_name, country, total_review<br>FROM hotel_review_count<br>WHERE rank_no=1;<br>
-#### 12. Top 5 hotels highly rated by Family travelers.
-SELECT h.hotel_name, u.traveller_type,<br>ROUND(AVG(r.score_overall),2) AS avg_score, <br>COUNT(r.review_id) AS total_reviews<br>FROM hotels h <br>JOIN reviews r ON h.hotel_id=r.hotel_id<br>JOIN users u ON r.user_id=u.user_id<br>WHERE u.traveller_type='Family'<br>GROUP BY h.hotel_name, u.traveller_type<br>ORDER BY avg_score DESC, total_reviews DESC LIMIT 5;
-#### 13. Compare cleanliness scores by gender.
-SELECT u.user_gender, ROUND(AVG(r.score_cleanliness),2) AS avg_cleanliness<br>FROM users u <br>JOIN reviews r ON u.user_id=r.user_id<br>GROUP BY u.user_gender;
-#### 14. Hotels where foreigners rate higher than locals.
+**12. Top 5 hotels highly rated by Family travelers.** <br>
+SELECT h.hotel_name, u.traveller_type,<br>ROUND(AVG(r.score_overall),2) AS avg_score, <br>COUNT(r.review_id) AS total_reviews<br>FROM hotels h <br>JOIN reviews r ON h.hotel_id=r.hotel_id<br>JOIN users u ON r.user_id=u.user_id<br>WHERE u.traveller_type='Family'<br>GROUP BY h.hotel_name, u.traveller_type<br>ORDER BY avg_score DESC, total_reviews DESC LIMIT 5;<br>
+**13. Compare cleanliness scores by gender.** <br>
+SELECT u.user_gender, ROUND(AVG(r.score_cleanliness),2) AS avg_cleanliness<br>FROM users u <br>JOIN reviews r ON u.user_id=r.user_id<br>GROUP BY u.user_gender;<br>
+**14. Hotels where foreigners rate higher than locals.** <br>
 WITH score AS (<br>SELECT h.hotel_name, h.country AS hotel_country,<br> u.country AS user_country,<br>CASE WHEN h.country = u.country THEN 'local' ELSE 'foreign' END AS user_type,<br>AVG(score_overall) AS avg_score<br>FROM reviews r<br>JOIN users u ON u.user_id=r.user_id<br>JOIN hotels h ON h.hotel_id=r.hotel_id<br>GROUP BY h.hotel_name, h.country, u.country<br>
 ),<br>pivot AS (<br>SELECT hotel_name,<br>MAX(CASE WHEN user_type='local' THEN avg_score END) AS local_score,<br>MAX(CASE WHEN user_type='foreign' THEN avg_score END) AS foreign_score<br>FROM score<br>GROUP BY hotel_name<br>
 )<br>SELECT hotel_name,<br>ROUND(local_score,2), ROUND(foreign_score,2),<br>ROUND(foreign_score-local_score,2) AS difference<br>FROM pivot<br>WHERE foreign_score > local_score<br>ORDER BY difference DESC;<br>
