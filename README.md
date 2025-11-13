@@ -111,18 +111,18 @@ This project analyzes hotel booking patterns, customer demographics, hotel perfo
 <br>
 **1. Key Metrics.<br>** <br>
 -Total Hotels	25 <br>-Average Rating	5 <br>-Overall Average Score	8.94 <br>-Total Users	50K <br>-Total Reviews	50K <br>-Avg Cleanliness Score	9.05 <br>-Avg Staff Score	8.97 <br>-Avg Comfort Score	9.02 <br> 
-These metrics show that the hotels maintain very high service quality, with overall scores above 8.9. 
+These metrics show that the hotels maintain very high service quality, with overall scores above 8.9. <br>
 <br>
 **2. Top 10 Hotels by User Reviews.<br>Based on number of users who reviewed:**<br>
 Nile Grandeur – 2104<br>Han River Oasis – 2071<br>The Kiwi Grand – 2060<br>The Orchid Palace – 2055<br>The Savannah House – 2049<br>The Bund Palace – 2040<br>Gaudi's Retreat – 2039<br>The Golden Oasis – 2035<br>Berlin Mitte Elite – 2022<br>Marina Bay Zenith – 2015<br>
-**These hotels are the most popular and attract the most customer engagement.**
+**These hotels are the most popular and attract the most customer engagement.**<br>
 <br>
 **3. Customer Demographics.** <br>
 Gender Split<br>Male: 51.92%<br>Female: 48.08% <br>A very balanced user base indicates equal hotel usage by both genders.<br>
 <br>
 **4. Traveler Type.** <br>
 **Breakdown of users by travel intention:** <br>
-Couple: 34.48%<br>Family: 23.89%<br>Business: 20.74%<br>Solo: 20.89%<br>Couple and Family travelers form over 58% of total bookings, meaning hotels must focus on family-friendly and romantic experiences.
+Couple: 34.48%<br>Family: 23.89%<br>Business: 20.74%<br>Solo: 20.89%<br>Couple and Family travelers form over 58% of total bookings, meaning hotels must focus on family-friendly and romantic experiences.<br>
 <br>
 **5. Monthly Review Trend.** <br>
 The monthly review chart shows:<br>Gradual increase from January to July Peak customer activity around June–August A decline towards end of year (post-travel season).This suggests summer is the busiest travel period.<br>
