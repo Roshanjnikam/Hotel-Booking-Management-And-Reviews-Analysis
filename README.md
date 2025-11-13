@@ -115,7 +115,6 @@ These metrics show that the hotels maintain very high service quality, with over
 <br>
 **2. Top 10 Hotels by User Reviews.<br>Based on number of users who reviewed:**<br>
 Nile Grandeur – 2104<br>Han River Oasis – 2071<br>The Kiwi Grand – 2060<br>The Orchid Palace – 2055<br>The Savannah House – 2049<br>The Bund Palace – 2040<br>Gaudi's Retreat – 2039<br>The Golden Oasis – 2035<br>Berlin Mitte Elite – 2022<br>Marina Bay Zenith – 2015<br>
-<br>
 **These hotels are the most popular and attract the most customer engagement.**
 <br>
 **3. Customer Demographics.** <br>
@@ -131,13 +130,13 @@ The monthly review chart shows:<br>Gradual increase from January to July Peak cu
 **6. Hotel Booking Rush.** <br>
 The booking rush chart shows:<br>Monthly bookings fluctuate between 3,000 — 5,000+ Lowest booking activity appears early in the year Demand rises around mid-year.This helps hotels predict staffing and inventory requirements.<br>
 <br>
-**7. Location-Based Hotel Ratings.**<br>
+**7. Location-Based Hotel Ratings.** <br>
 The map visual displays average hotel ratings across regions:<br>Highly rated hotels are concentrated in Europe and North America Moderate ratings observed in Asia, Africa, and South America.This reveals geographic trends in hotel service quality and customer expectations.<br>
 <br>
 **8. Key Insights.** <br>
 1. Hotels maintain strong cleanliness, comfort, and staff performance With average scores above 8.9, customer satisfaction is consistently high.<br>2. Couple travelers are the largest user segmentHotels can design couple packages and offers.<br>3. Summer months show highest customer engagementMarketing campaigns should target June–August.<br>4. Top hotels consistently receive high engagement Properties like Nile Grandeur and Han River Oasis are customer favorites.<br>5. Global distribution shows variation in ratings Hotel quality varies by region, helping brands understand where to improve.<br>
 <br>
-**9. Conclusion.** <br>
+**9. Conclusion.**  <br>
 The Hotel Booking Insights dashboard provides a comprehensive view of customer demographics, hotel popularity, review trends, and service quality.
 With this analysis, hotel management can:<br>
 Identify best-performing properties Improve low-performing regions Understand traveler behavior Enhance customer experience<br>Optimize seasonal strategies Overall, the data suggests that hotels deliver excellent service quality, attracting consistent engagement throughout the year.
