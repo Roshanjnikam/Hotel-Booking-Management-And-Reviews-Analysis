@@ -4,7 +4,7 @@
 This end-to-end project analysis hotel booking trends, hotel performance, user demographics, traveller types, and review sentiments using:
 •	PostgreSQL database (schema, queries, data loading) <br> •	Python for EDA, clustering, ML classification & sentiment analysis <br> •	Power BI Dashboard <br>The goal is to help hotels understand guest behaviour, improve service quality, identify top hotels, and extract insights from user-generated reviews.<br>
 ### 1. Database Design (SQL Schema).<br>Tables Created.
-##### 1. hotels.<br>
+**1. hotels.<br>**
 create table hotels( <br>
  hotel_id INT PRIMARY KEY, <br>
  hotel_name VARCHAR(50), <br>
@@ -20,7 +20,7 @@ create table hotels( <br>
  staff_base DECIMAL(10,2), <br>
  value_for_money_base DECIMAL(10,2) <br>
 ); <br>
-##### 2. users.<br>
+**2. users.<br>**
 create table users( <br>
  user_id INT PRIMARY KEY, <br>
  user_gender VARCHAR(10), <br>
@@ -29,7 +29,7 @@ create table users( <br>
  traveller_type VARCHAR(50), <br>
  join_date DATE <br>
 ); <br>
-##### 3. reviews.<br>
+**3. reviews.<br>**
 create table reviews( <br>
  review_id INT PRIMARY KEY, <br>
  user_id INT REFERENCES users(user_id), <br>
@@ -43,15 +43,12 @@ create table reviews( <br>
  score_staff DECIMAL(10,2), <br>
  score_value_for_money DECIMAL(10,2), <br>
  review_text TEXT <br>
-);
-<br>
-
-
- ### 2. Data Import (CSV Load into PostgreSQL).
+);<br>
+### 2. Data Import (CSV Load into PostgreSQL).
 COPY hotels FROM 'D:\postgres\Projects\hotel_booking\hotels.csv' DELIMITER ',' CSV HEADER; <br>COPY users FROM 'D:\postgres\Projects\hotel_booking\users.csv' DELIMITER ',' CSV HEADER; <br>COPY reviews FROM 'D:\postgres\Projects\hotel_booking\reviews.csv' DELIMITER ',' CSV HEADER; <br>
 
-### 3. SQL Queries  overview Used in Analysis 
-#### 1. List hotels in a specific city.
+### 3. SQL Queries  overview Used in Analysis.
+**1. List hotels in a specific city.**
 SELECT hotel_name, star_rating FROM hotels WHERE city='London';
 #### 2. Top 5 youngest users who wrote reviews.
 SELECT u.user_id, u.age_group, r.review_text <br>FROM users u <br>LEFT JOIN reviews r ON u.user_id = r.user_id<br>ORDER BY u.age_group ASC <br>LIMIT 5;
