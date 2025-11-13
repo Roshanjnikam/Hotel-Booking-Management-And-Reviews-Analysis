@@ -1,8 +1,9 @@
 ## Hotel Booking Management & Reviews Analysis – Project Report
 #### By Roshan Nikam
-### Project Overview <br>
+**Project Overview** <br>
 This end-to-end project analysis hotel booking trends, hotel performance, user demographics, traveller types, and review sentiments using:
 •	PostgreSQL database (schema, queries, data loading) <br> •	Python for EDA, clustering, ML classification & sentiment analysis <br> •	Power BI Dashboard <br>The goal is to help hotels understand guest behaviour, improve service quality, identify top hotels, and extract insights from user-generated reviews.<br>
+<br>
 ### 1. Database Design (SQL Schema).<br>Tables Created.<br>
 **1. hotels.<br>**
 create table hotels( <br>
@@ -20,6 +21,7 @@ create table hotels( <br>
  staff_base DECIMAL(10,2), <br>
  value_for_money_base DECIMAL(10,2) <br>
 ); <br>
+<br>
 **2. users.<br>**
 create table users( <br>
  user_id INT PRIMARY KEY, <br>
@@ -29,6 +31,7 @@ create table users( <br>
  traveller_type VARCHAR(50), <br>
  join_date DATE <br>
 ); <br>
+<br>
 **3. reviews.<br>**
 create table reviews( <br>
  review_id INT PRIMARY KEY, <br>
@@ -46,10 +49,11 @@ create table reviews( <br>
 );<br>
 ### 2. Data Import (CSV Load into PostgreSQL).
 COPY hotels FROM 'D:\postgres\Projects\hotel_booking\hotels.csv' DELIMITER ',' CSV HEADER; <br>COPY users FROM 'D:\postgres\Projects\hotel_booking\users.csv' DELIMITER ',' CSV HEADER; <br>COPY reviews FROM 'D:\postgres\Projects\hotel_booking\reviews.csv' DELIMITER ',' CSV HEADER; <br>
-
+<br>
 ### 3. SQL Queries  overview Used in Analysis.
 **1. List hotels in a specific city.** <br>
 SELECT hotel_name, star_rating FROM hotels WHERE city='London';<br>
+<br>
 **2. Top 5 youngest users who wrote reviews.** <br>
 SELECT u.user_id, u.age_group, r.review_text <br>FROM users u <br>LEFT JOIN reviews r ON u.user_id = r.user_id<br>ORDER BY u.age_group ASC <br>LIMIT 5;<br>
 **3. All reviews for a given hotel.** <br>
