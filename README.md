@@ -98,7 +98,7 @@ WITH score AS (<br>SELECT h.hotel_name, h.country AS hotel_country,<br> u.countr
 •	Hotel performance overview. <br>•	Geographical map.<br> •	Traveller type analysis.<br>•	Review trends.<br>•	Value for money comparison.<br>•	Gender comparison.<br>•	Top 10 hotels.<br>•	Users rushed by months.<br>•	Using aged group wise analysis.<br>•	Monthly comparisons. <br>This project analyzes hotel booking patterns, customer demographics, hotel performance, and user review behaviors using an interactive dashboard.The insights help hotel management understand:<br>Who their customers are.<br>Which hotels perform best.<br>Seasonal booking patterns.<br>Traveler behavior.<br>Service quality performance.
 #### The dashboard provides a complete 360° view of hotel booking activity.
 ### 1. Key Metrics.
-##### Metric	Value<br>Total Hotels	25 <br>##### Average Rating	5 <br>##### Overall Average Score	8.94 <br>##### Total Users	50K <br>##### Total Reviews	50K <br>##### Avg Cleanliness Score	9.05 <br>##### Avg Staff Score	8.97 <br>##### Avg Comfort Score	9.02 <br> <br>
+##### -Metric	Value<br>Total Hotels	25 <br>-Average Rating	5 <br>-Overall Average Score	8.94 <br>-Total Users	50K <br>-Total Reviews	50K <br>-Avg Cleanliness Score	9.05 <br>-Avg Staff Score	8.97 <br>-Avg Comfort Score	9.02 <br> 
 These metrics show that the hotels maintain very high service quality, with overall scores above 8.9.
 
 ### 2. Top 10 Hotels by User Reviews.
