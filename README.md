@@ -122,17 +122,12 @@ Monthly bookings fluctuate between 3,000 — 5,000+ Lowest booking activity appe
 ### 7. Location-Based Hotel Ratings.
 #### The map visual displays average hotel ratings across regions:
 Highly rated hotels are concentrated in Europe and North America<br>Moderate ratings observed in Asia, Africa, and South America.This reveals geographic trends in hotel service quality and customer expectations.
-
 ### 8. Key Insights.
-#### 1. Hotels maintain strong cleanliness, comfort, and staff performance With average scores above 8.9, customer satisfaction is consistently high.
-#### 2. Couple travelers are the largest user segmentHotels can design couple packages and offers.
-#### 3. Summer months show highest customer engagementMarketing campaigns should target June–August.
-#### 4. Top hotels consistently receive high engagement Properties like Nile Grandeur and Han River Oasis are customer favorites.
-#### 5. Global distribution shows variation in ratings Hotel quality varies by region, helping brands understand where to improve.
+1. Hotels maintain strong cleanliness, comfort, and staff performance With average scores above 8.9, customer satisfaction is consistently high.<br>2. Couple travelers are the largest user segmentHotels can design couple packages and offers.<br>3. Summer months show highest customer engagementMarketing campaigns should target June–August.<br>4. Top hotels consistently receive high engagement Properties like Nile Grandeur and Han River Oasis are customer favorites.<br>5. Global distribution shows variation in ratings Hotel quality varies by region, helping brands understand where to improve.
 ### 9. Conclusion.
 The Hotel Booking Insights dashboard provides a comprehensive view of customer demographics, hotel popularity, review trends, and service quality.
-With this analysis, hotel management can:
-Identify best-performing properties<br>Improve low-performing regions<br>Understand traveler behavior<br>Enhance customer experience<br>Optimize seasonal strategies<br>Overall, the data suggests that hotels deliver excellent service quality, attracting consistent engagement throughout the year.
+With this analysis, hotel management can:<br>
+Identify best-performing properties Improve low-performing regions Understand traveler behavior Enhance customer experience<br>Optimize seasonal strategies Overall, the data suggests that hotels deliver excellent service quality, attracting consistent engagement throughout the year.
 
 ### Dashboard.
 
