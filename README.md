@@ -114,14 +114,11 @@ Couple: 34.48%<br>Family: 23.89%<br>Business: 20.74%<br>Solo: 20.89%
 #### Couple and Family travelers form over 58% of total bookings, meaning hotels must focus on family-friendly and romantic experiences.
 
 ### 5. Monthly Review Trend.
-#### The monthly review chart shows:
-Gradual increase from January to July Peak customer activity around June–August A decline towards end of year (post-travel season).This suggests summer is the busiest travel period.
+The monthly review chart shows:<br>Gradual increase from January to July Peak customer activity around June–August A decline towards end of year (post-travel season).This suggests summer is the busiest travel period.
 ### 6. Hotel Booking Rush.
-#### The booking rush chart shows:
-Monthly bookings fluctuate between 3,000 — 5,000+ Lowest booking activity appears early in the year Demand rises around mid-year.This helps hotels predict staffing and inventory requirements.
+The booking rush chart shows:<br>Monthly bookings fluctuate between 3,000 — 5,000+ Lowest booking activity appears early in the year Demand rises around mid-year.This helps hotels predict staffing and inventory requirements.
 ### 7. Location-Based Hotel Ratings.
-#### The map visual displays average hotel ratings across regions:
-Highly rated hotels are concentrated in Europe and North America<br>Moderate ratings observed in Asia, Africa, and South America.This reveals geographic trends in hotel service quality and customer expectations.
+The map visual displays average hotel ratings across regions:<br>Highly rated hotels are concentrated in Europe and North America<br>Moderate ratings observed in Asia, Africa, and South America.This reveals geographic trends in hotel service quality and customer expectations.
 ### 8. Key Insights.
 1. Hotels maintain strong cleanliness, comfort, and staff performance With average scores above 8.9, customer satisfaction is consistently high.<br>2. Couple travelers are the largest user segmentHotels can design couple packages and offers.<br>3. Summer months show highest customer engagementMarketing campaigns should target June–August.<br>4. Top hotels consistently receive high engagement Properties like Nile Grandeur and Han River Oasis are customer favorites.<br>5. Global distribution shows variation in ratings Hotel quality varies by region, helping brands understand where to improve.
 ### 9. Conclusion.
