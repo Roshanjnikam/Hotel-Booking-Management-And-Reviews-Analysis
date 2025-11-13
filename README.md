@@ -110,8 +110,7 @@ Gender Split<br>Male: 51.92%<br>Female: 48.08% <br>A very balanced user base ind
 
 ### 4. Traveler Type.
 ##### Breakdown of users by travel intention:
-Couple: 34.48%<br>Family: 23.89%<br>Business: 20.74%<br>Solo: 20.89%
-#### Couple and Family travelers form over 58% of total bookings, meaning hotels must focus on family-friendly and romantic experiences.
+Couple: 34.48%<br>Family: 23.89%<br>Business: 20.74%<br>Solo: 20.89%<br>Couple and Family travelers form over 58% of total bookings, meaning hotels must focus on family-friendly and romantic experiences.
 
 ### 5. Monthly Review Trend.
 The monthly review chart shows:<br>Gradual increase from January to July Peak customer activity around June–August A decline towards end of year (post-travel season).This suggests summer is the busiest travel period.
