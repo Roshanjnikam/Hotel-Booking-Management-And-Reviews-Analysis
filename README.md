@@ -108,30 +108,36 @@ This project analyzes hotel booking patterns, customer demographics, hotel perfo
 -Who their customers are.<br>-Which hotels perform best.<br> - Seasonal booking patterns.<br> - Traveler behavior.<br> - Service quality performance.
 <br>
 **The dashboard provides a complete 360° view of hotel booking activity.**<br>
+<br>
 **1. Key Metrics.<br>** <br>
 -Total Hotels	25 <br>-Average Rating	5 <br>-Overall Average Score	8.94 <br>-Total Users	50K <br>-Total Reviews	50K <br>-Avg Cleanliness Score	9.05 <br>-Avg Staff Score	8.97 <br>-Avg Comfort Score	9.02 <br> 
 These metrics show that the hotels maintain very high service quality, with overall scores above 8.9. 
 <br>
 **2. Top 10 Hotels by User Reviews.<br>Based on number of users who reviewed:**<br>
 Nile Grandeur – 2104<br>Han River Oasis – 2071<br>The Kiwi Grand – 2060<br>The Orchid Palace – 2055<br>The Savannah House – 2049<br>The Bund Palace – 2040<br>Gaudi's Retreat – 2039<br>The Golden Oasis – 2035<br>Berlin Mitte Elite – 2022<br>Marina Bay Zenith – 2015<br>
+<br>
 **These hotels are the most popular and attract the most customer engagement.**
-
-### 3. Customer Demographics.
-Gender Split<br>Male: 51.92%<br>Female: 48.08% <br>A very balanced user base indicates equal hotel usage by both genders.
-
-### 4. Traveler Type.
-##### Breakdown of users by travel intention:
+<br>
+**3. Customer Demographics.** <br>
+Gender Split<br>Male: 51.92%<br>Female: 48.08% <br>A very balanced user base indicates equal hotel usage by both genders.<br>
+<br>
+**4. Traveler Type.** <br>
+**Breakdown of users by travel intention:** <br>
 Couple: 34.48%<br>Family: 23.89%<br>Business: 20.74%<br>Solo: 20.89%<br>Couple and Family travelers form over 58% of total bookings, meaning hotels must focus on family-friendly and romantic experiences.
-
-### 5. Monthly Review Trend.
-The monthly review chart shows:<br>Gradual increase from January to July Peak customer activity around June–August A decline towards end of year (post-travel season).This suggests summer is the busiest travel period.
-### 6. Hotel Booking Rush.
-The booking rush chart shows:<br>Monthly bookings fluctuate between 3,000 — 5,000+ Lowest booking activity appears early in the year Demand rises around mid-year.This helps hotels predict staffing and inventory requirements.
-### 7. Location-Based Hotel Ratings.
-The map visual displays average hotel ratings across regions:<br>Highly rated hotels are concentrated in Europe and North America Moderate ratings observed in Asia, Africa, and South America.This reveals geographic trends in hotel service quality and customer expectations.
-### 8. Key Insights.
-1. Hotels maintain strong cleanliness, comfort, and staff performance With average scores above 8.9, customer satisfaction is consistently high.<br>2. Couple travelers are the largest user segmentHotels can design couple packages and offers.<br>3. Summer months show highest customer engagementMarketing campaigns should target June–August.<br>4. Top hotels consistently receive high engagement Properties like Nile Grandeur and Han River Oasis are customer favorites.<br>5. Global distribution shows variation in ratings Hotel quality varies by region, helping brands understand where to improve.
-### 9. Conclusion.
+<br>
+**5. Monthly Review Trend.** <br>
+The monthly review chart shows:<br>Gradual increase from January to July Peak customer activity around June–August A decline towards end of year (post-travel season).This suggests summer is the busiest travel period.<br>
+<br>
+**6. Hotel Booking Rush.** <br>
+The booking rush chart shows:<br>Monthly bookings fluctuate between 3,000 — 5,000+ Lowest booking activity appears early in the year Demand rises around mid-year.This helps hotels predict staffing and inventory requirements.<br>
+<br>
+**7. Location-Based Hotel Ratings.**<br>
+The map visual displays average hotel ratings across regions:<br>Highly rated hotels are concentrated in Europe and North America Moderate ratings observed in Asia, Africa, and South America.This reveals geographic trends in hotel service quality and customer expectations.<br>
+<br>
+**8. Key Insights.** <br>
+1. Hotels maintain strong cleanliness, comfort, and staff performance With average scores above 8.9, customer satisfaction is consistently high.<br>2. Couple travelers are the largest user segmentHotels can design couple packages and offers.<br>3. Summer months show highest customer engagementMarketing campaigns should target June–August.<br>4. Top hotels consistently receive high engagement Properties like Nile Grandeur and Han River Oasis are customer favorites.<br>5. Global distribution shows variation in ratings Hotel quality varies by region, helping brands understand where to improve.<br>
+<br>
+**9. Conclusion.** <br>
 The Hotel Booking Insights dashboard provides a comprehensive view of customer demographics, hotel popularity, review trends, and service quality.
 With this analysis, hotel management can:<br>
 Identify best-performing properties Improve low-performing regions Understand traveler behavior Enhance customer experience<br>Optimize seasonal strategies Overall, the data suggests that hotels deliver excellent service quality, attracting consistent engagement throughout the year.
