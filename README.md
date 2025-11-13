@@ -95,12 +95,8 @@ WITH score AS (<br>SELECT h.hotel_name, h.country AS hotel_country,<br> u.countr
 
 ### 5. Power BI Dashboard
 ###### A single dashboard was designed with the following visuals:
-•	Hotel performance overview - <br>•	Geographical map<br> - •	Traveller type analysis<br>- •	Review trends - <br>•	Value for money comparison - <br>•	Gender comparison -<br>•	Top 10 hotels - <br>•	Users rushed by months - <br>•	Using aged group wise analysis - <br>•	Monthly comparisons- 
-This project analyzes hotel booking patterns, customer demographics, hotel performance, and user review behaviors using an interactive dashboard.
-The insights help hotel management understand:<br>Who their customers are<br>Which hotels perform best<br>Seasonal booking patterns<br>Traveler behavior<br>Service quality performance.
-
+•	Hotel performance overview. <br>•	Geographical map.<br> •	Traveller type analysis.<br>•	Review trends.<br>•	Value for money comparison.<br>•	Gender comparison.<br>•	Top 10 hotels.<br>•	Users rushed by months.<br>•	Using aged group wise analysis.<br>•	Monthly comparisons. <br>This project analyzes hotel booking patterns, customer demographics, hotel performance, and user review behaviors using an interactive dashboard.The insights help hotel management understand:<br>Who their customers are<br>Which hotels perform best.<br>Seasonal booking patterns.<br>Traveler behavior.<br>Service quality performance.
 #### The dashboard provides a complete 360° view of hotel booking activity.
-
 ### 1. Key Metrics.
 ##### Metric	Value<br>Total Hotels	25
 ##### Average Rating	5
