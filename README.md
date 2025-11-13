@@ -1,5 +1,39 @@
-# Hotel Booking Management And Reviews Analytics Project 
-##### by Roshan Nikam
+### Hotel Booking Management & Reviews Analysis – Project Report
+#### By Roshan Nikam
+### Project Overview
+#### This end-to-end project analysis hotel booking trends, hotel performance, user demographics, traveller types, and review sentiments using:
+•	PostgreSQL database (schema, queries, data loading) <br> •	Python for EDA, clustering, ML classification & sentiment analysis <br> •	Power BI Dashboard
+The goal is to help hotels understand guest behaviour, improve service quality, identify top hotels, and extract insights from user-generated reviews.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### 1. Introduction
 ##### This project analyses hotel reviews data stored in a PostgreSQL database with three tables:
