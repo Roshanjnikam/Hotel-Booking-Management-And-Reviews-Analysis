@@ -152,11 +152,4 @@ Identify best-performing properties Improve low-performing regions Understand tr
 This section of the project focuses on data analysis, machine learning, and sentiment analysis performed on hotel review data. The goal is to understand:<br>The relationship between base hotel ratings and real user ratings<br>Distribution of scores<br>Clustering hotels based on review patterns<br>Predicting traveler types<br>Analyzing polarity of guest feedback<br>Extracting keywords from reviews
 
 **1. Correlation Analysis Between Base Ratings and User Ratings** <b>
-**Key Findings**<b>
-Cleanliness_base strongly correlates with facilities_base (0.79) and staff_base (0.70).<b>Hotels that maintain cleanliness also excel in facilities and staff quality.
-<b>
-Comfort_base has a high correlation with staff_base (0.83).<b>Comfortable hotels tend to have better staff interactions.
-<b>
-Location_base has weak or negative correlations with most metrics.<b>Location does not influence user perception of internal facilities.
-<b>
-User Scores (score_cleanliness, score_comfort, etc.) correlate moderately with base scores, showing that actual user experiences align with expected ratings.
+**Key Findings**<b>Cleanliness_base strongly correlates with facilities_base (0.79) and staff_base (0.70).<b>Hotels that maintain cleanliness also excel in facilities and staff quality.<b>Comfort_base has a high correlation with staff_base (0.83).<b>Comfortable hotels tend to have better staff interactions.<b>Location_base has weak or negative correlations with most metrics.<b>Location does not influence user perception of internal facilities.<b>User Scores (score_cleanliness, score_comfort, etc.) correlate moderately with base scores, showing that actual user experiences align with expected ratings.
