@@ -152,4 +152,33 @@ Identify best-performing properties Improve low-performing regions Understand tr
 This section of the project focuses on data analysis, machine learning, and sentiment analysis performed on hotel review data. The goal is to understand:<br>The relationship between base hotel ratings and real user ratings<br>Distribution of scores<br>Clustering hotels based on review patterns<br>Predicting traveler types<br>Analyzing polarity of guest feedback<br>Extracting keywords from reviews
 
 **1. Correlation Analysis Between Base Ratings and User Ratings** <b>
-**Key Findings**<b>Cleanliness_base strongly correlates with facilities_base (0.79) and staff_base (0.70).<b>Hotels that maintain cleanliness also excel in facilities and staff quality.<b>Comfort_base has a high correlation with staff_base (0.83).<b>Comfortable hotels tend to have better staff interactions.<b>Location_base has weak or negative correlations with most metrics.<b>Location does not influence user perception of internal facilities.<b>User Scores (score_cleanliness, score_comfort, etc.) correlate moderately with base scores, showing that actual user experiences align with expected ratings.
+**Key Findings**<b>
+Cleanliness_base strongly correlates with facilities_base (0.79) and staff_base (0.70).<b>Hotels that maintain cleanliness also excel in facilities and staff quality.<b>Comfort_base has a high correlation with staff_base (0.83).<b>Comfortable hotels tend to have better staff interactions.<b>Location_base has weak or negative correlations with most metrics.<b>Location does not influence user perception of internal facilities.<b>User Scores (score_cleanliness, score_comfort, etc.) correlate moderately with base scores, showing that actual user experiences align with expected ratings.<br>
+<br>
+**Overall Insight**<br>
+Hotels are consistent: base expectations match real user satisfaction in cleanliness, comfort, and staff services.<br>
+<br>
+**2. Distribution of Overall Scores** <br>
+Observations<br>The distribution forms a normal (bell-shaped) curve.<br>Most overall scores fall between 8.8 and 9.2.<br>Very few hotels fall below 8.5 or above 9.4.
+<br>
+Insight<br>
+Users typically give high ratings, showing strong satisfaction and low rating variance.<br>
+<br>
+**K-Means Clustering** <br>
+Hotels grouped into 3 clusters:<br>Cluster	Avg Overall	Insights<br>0	8.99	High cleanliness & location<br>1	9.01	Best staff ratings<br>2	8.79	Mid-level performance<br>
+<br>
+**Traveler Type Classification (ML Model)** <br>Accuracy: 0.92<br>F1 Score (macro): 0.92<br>Traveller Type	F1 Score<br>Business	0.96<br>Couple	0.94<br>Family	0.88<br>Solo	0.91 <br>
+<br>
+**6. Sentiment Analysis (Review Text)** <br>Tools Used<br>•	TextBlob Polarity<br>•	VADER Sentiment Labeling<br>
+**Findings**<br>•	Majority reviews labeled positive<br>•	Very minimal negative sentiment<br>•	Reflects excellent guest satisfaction<br>
+<br>
+**7. Word Cloud Insights**<br>
+Frequent review words include:<br>new, open, base, make, save, grow, table, person, window, fact<br>Shows common topics guests mention.
+<br>
+**Conclusion** <br>
+This project provides a complete hotel analytics pipeline using SQL, Power BI, Python, ML & NLP.<br>Key Insights<br>•	Hotels have very high guest satisfaction<br>•	Cleanliness, comfort, and staff strongly affect overall ratings<br>•	Couples & families dominate the traveler category<br>•	Seasonal booking patterns influence review volumes<br>•	ML model can predict traveler type with 92% accuracy<br>•	Sentiment shows overwhelmingly positive feedback
+<br>
+**Recommendations** <br>
+•	Improve value-for-money scores for underperforming hotels<br>•	Create seasonal travel offers<br>•	Enhance staff and cleanliness training<br>•	Use clustering results to identify improvement areas<br>•	Utilize sentiment keywords in marketing
+
+
