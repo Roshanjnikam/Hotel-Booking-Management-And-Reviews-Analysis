@@ -145,7 +145,7 @@ Identify best-performing properties Improve low-performing regions Understand tr
 
 ### Dashboard.
 
-<img width="940" height="528" alt="image" src="https://github.com/user-attachments/assets/7e4709dc-6972-456f-9d1c-709adb6e2ae4" />
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/7e4709dc-6972-456f-9d1c-709adb6e2ae4" />
 
 
 ## Overview of Data analysis using python.
@@ -155,7 +155,7 @@ This section of the project focuses on data analysis, machine learning, and sent
 <br>
 **Key Findings**<b>
 <br>
-<img width="1279" height="743" alt="corelation" src="https://github.com/user-attachments/assets/93e2361a-ba96-450f-9a39-a2adfce2ca92" />
+<img width="600" height="350" alt="corelation" src="https://github.com/user-attachments/assets/93e2361a-ba96-450f-9a39-a2adfce2ca92" />
 
 Cleanliness_base strongly correlates with facilities_base (0.79) and staff_base (0.70).<b>Hotels that maintain cleanliness also excel in facilities and staff quality.<b>Comfort_base has a high correlation with staff_base (0.83).<b>Comfortable hotels tend to have better staff interactions.<b>Location_base has weak or negative correlations with most metrics.<b>Location does not influence user perception of internal facilities.<b>User Scores (score_cleanliness, score_comfort, etc.) correlate moderately with base scores, showing that actual user experiences align with expected ratings.<br>
 <br>
@@ -163,7 +163,7 @@ Cleanliness_base strongly correlates with facilities_base (0.79) and staff_base 
 Hotels are consistent: base expectations match real user satisfaction in cleanliness, comfort, and staff services.<br>
 <br>
 **2. Distribution of Overall Scores** <br>
-<img width="824" height="723" alt="distrbution_score_overall" src="https://github.com/user-attachments/assets/3a976427-94e7-4430-9538-a68f7d6e1f1f" />
+<img width="400" height="300" alt="distrbution_score_overall" src="https://github.com/user-attachments/assets/3a976427-94e7-4430-9538-a68f7d6e1f1f" />
 
 Observations<br>The distribution forms a normal (bell-shaped) curve.<br>Most overall scores fall between 8.8 and 9.2.<br>Very few hotels fall below 8.5 or above 9.4.
 <br>
@@ -171,23 +171,23 @@ Insight<br>
 Users typically give high ratings, showing strong satisfaction and low rating variance.<br>
 <br>
 **K-Means Clustering** <br>
-<img width="862" height="421" alt="k-means_cluster " src="https://github.com/user-attachments/assets/df1e58a7-5881-432c-b786-215be6b28324" />
+<img width="600" height="200" alt="k-means_cluster " src="https://github.com/user-attachments/assets/df1e58a7-5881-432c-b786-215be6b28324" />
 
 Hotels grouped into 3 clusters:<br>Cluster	Avg Overall	Insights<br>0	8.99	High cleanliness & location<br>1	9.01	Best staff ratings<br>2	8.79	Mid-level performance<br>
 <br>
 **Traveler Type Classification (ML Model)** <br>
-<img width="706" height="437" alt="predict_traveller_type_classification" src="https://github.com/user-attachments/assets/d79a660a-3704-429d-845b-fde9edcc37b7" />
+<img width="600" height="250" alt="predict_traveller_type_classification" src="https://github.com/user-attachments/assets/d79a660a-3704-429d-845b-fde9edcc37b7" />
 
 Accuracy: 0.92<br>F1 Score (macro): 0.92<br>Traveller Type	F1 Score<br>Business	0.96<br>Couple	0.94<br>Family	0.88<br>Solo	0.91 <br>
 <br>
 **6. Sentiment Analysis (Review Text)** <br>
-<img width="926" height="362" alt="sentimental_analysis_revies" src="https://github.com/user-attachments/assets/e0624ca4-6c6a-4756-a6ef-d8be964382b4" />
+<img width="600" height="200" alt="sentimental_analysis_revies" src="https://github.com/user-attachments/assets/e0624ca4-6c6a-4756-a6ef-d8be964382b4" />
 
 Tools Used<br>•	TextBlob Polarity<br>•	VADER Sentiment Labeling<br>
 **Findings**<br>•	Majority reviews labeled positive<br>•	Very minimal negative sentiment<br>•	Reflects excellent guest satisfaction<br>
 <br>
 **7. Word Cloud Insights**<br>
-<img width="1283" height="699" alt="word_cloud_review_text" src="https://github.com/user-attachments/assets/c8ee2787-a73d-4272-970e-d2c700bd63a6" />
+<img width="800" height="400" alt="word_cloud_review_text" src="https://github.com/user-attachments/assets/c8ee2787-a73d-4272-970e-d2c700bd63a6" />
 
 Frequent review words include:<br>new, open, base, make, save, grow, table, person, window, fact<br>Shows common topics guests mention.
 <br>
